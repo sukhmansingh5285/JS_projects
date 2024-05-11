@@ -1,0 +1,176 @@
+<html>
+  <head>
+    <title>Cal 4</title>
+  </head>
+  <body>
+    <script language="JavaScript">
+      var N1, N2, sign; // Added var keyword to declare variables
+
+      function Subtraction1() {
+        N1 = document.f1.result.value;
+        sign = document.f1.minus.value;
+      }
+
+      function Addition1() {
+        // Corrected function name to Addition1
+        N1 = document.f1.result.value;
+        sign = document.f1.plus.value;
+      }
+
+      function Multiply1() {
+        N1 = document.f1.result.value;
+        sign = document.f1.multiply.value;
+      }
+
+      function Divide1() {
+        N1 = document.f1.result.value;
+        sign = document.f1.divide.value;
+      }
+
+      function Result1() {
+        switch (sign) {
+          case "+":
+            N2 = document.f1.result.value; // Added var keyword to declare N2
+            document.f1.result.value = parseInt(N1) + parseInt(N2);
+            break;
+          case "-":
+            N2 = document.f1.result.value; // Added var keyword to declare N2
+            document.f1.result.value = parseInt(N1) - parseInt(N2);
+            break;
+          case "/":
+            N2 = document.f1.result.value; // Added var keyword to declare N2
+            document.f1.result.value = parseInt(N1) / parseInt(N2);
+            break;
+          case "*":
+            N2 = document.f1.result.value; // Added var keyword to declare N2
+            document.f1.result.value = parseInt(N1) * parseInt(N2);
+            break;
+          default:
+            alert("No Result");
+            break;
+        }
+      }
+
+      function a0() {
+        document.f1.result.value = document.f1.b0.value;
+      }
+
+      function a1() {
+        document.f1.result.value = document.f1.b1.value;
+      }
+
+      function a2() {
+        document.f1.result.value = document.f1.b2.value;
+      }
+
+      function a3() {
+        document.f1.result.value = document.f1.b3.value;
+      }
+
+      function a4() {
+        document.f1.result.value = document.f1.b4.value;
+      }
+
+      function a5() {
+        document.f1.result.value = document.f1.b5.value;
+      }
+
+      function a6() {
+        document.f1.result.value = document.f1.b6.value;
+      }
+
+      function a7() {
+        document.f1.result.value = document.f1.b7.value;
+      }
+
+      function a8() {
+        document.f1.result.value = document.f1.b8.value;
+      }
+
+      function a9() {
+        document.f1.result.value = document.f1.b9.value;
+      }
+    </script>
+    <center>
+      <form name="f1">
+        <table>
+          <tr>
+            <td colspan="3"><input type="text" name="result" /></td>
+            <!-- Added quotes around attribute values -->
+            <td>
+              <input type="button" value="=" name="eq" onClick="Result1()" />
+            </td>
+            <!-- Added quotes around attribute values -->
+          </tr>
+          <tr>
+            <td><input type="button" value="7" name="b7" onClick="a7()" /></td>
+            <!-- Added quotes around attribute values -->
+            <td><input type="button" value="8" name="b8" onClick="a8()" /></td>
+            <!-- Added quotes around attribute values -->
+            <td><input type="button" value="9" name="b9" onClick="a9()" /></td>
+            <!-- Added quotes around attribute values -->
+            <td>
+              <input
+                type="button"
+                value="+"
+                name="plus"
+                onClick="Addition1()"
+              />
+            </td>
+            <!-- Corrected onClick function name -->
+          </tr>
+          <tr>
+            <td><input type="button" value="4" name="b4" onClick="a4()" /></td>
+            <!-- Added quotes around attribute values -->
+            <td><input type="button" value="5" name="b5" onClick="a5()" /></td>
+            <!-- Added quotes around attribute values -->
+            <td><input type="button" value="6" name="b6" onClick="a6()" /></td>
+            <!-- Added quotes around attribute values -->
+            <td>
+              <input
+                type="button"
+                value="-"
+                name="minus"
+                onClick="Subtraction1()"
+              />
+            </td>
+            <!-- Corrected onClick function name -->
+          </tr>
+          <tr>
+            <td><input type="button" value="1" name="b1" onClick="a1()" /></td>
+            <!-- Added quotes around attribute values -->
+            <td><input type="button" value="2" name="b2" onClick="a2()" /></td>
+            <!-- Added quotes around attribute values -->
+            <td><input type="button" value="3" name="b3" onClick="a3()" /></td>
+            <!-- Added quotes around attribute values -->
+            <td>
+              <input
+                type="button"
+                value="*"
+                name="multiply"
+                onClick="Multiply1()"
+              />
+            </td>
+            <!-- Corrected onClick function name -->
+          </tr>
+          <tr>
+            <td><input type="button" value="0" name="b0" onClick="a0()" /></td>
+            <!-- Added quotes around attribute values -->
+            <td><input type="button" value="." name="dec" /></td>
+            <td><input type="reset" value="C" name="clear" /></td>
+            <!-- Added quotes around attribute values -->
+            <td>
+              <input
+                type="button"
+                value="/"
+                name="divide"
+                onClick="Divide1()"
+              />
+            </td>
+            <!-- Corrected onClick function name -->
+          </tr>
+        </table>
+      </form>
+    </center>
+  </body>
+</html>
