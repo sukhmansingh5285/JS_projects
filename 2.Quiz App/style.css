@@ -1,0 +1,44 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: lightgrey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.quiz-container{
+  background-color: white;
+  width: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.question-container{
+  margin: 1em;
+}
+
+ul li{
+  margin: 10px;
+  font-size: 1.2rem;
+}
+
+
+#btn{
+  background-color: rgb(160, 55, 160);
+  
+  color: white;
+  width: 100%;
+  display: block;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+}
+
+#btn:hover{
+  cursor: pointer;
+  background-color: purple;
+}
